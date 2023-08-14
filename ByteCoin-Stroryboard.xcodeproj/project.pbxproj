@@ -14,6 +14,7 @@
 		445157B72A8A352D00C86376 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 445157B62A8A352D00C86376 /* Assets.xcassets */; };
 		445157BA2A8A352D00C86376 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 445157B82A8A352D00C86376 /* LaunchScreen.storyboard */; };
 		445157C82A8A386300C86376 /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445157C72A8A386300C86376 /* CoinManager.swift */; };
+		445157CB2A8A6E8F00C86376 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445157CA2A8A6E8F00C86376 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		445157B92A8A352D00C86376 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		445157BB2A8A352D00C86376 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		445157C72A8A386300C86376 /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
+		445157CA2A8A6E8F00C86376 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				445157AF2A8A352B00C86376 /* SceneDelegate.swift */,
 				445157B32A8A352B00C86376 /* Main.storyboard */,
 				445157B82A8A352D00C86376 /* LaunchScreen.storyboard */,
+				445157C92A8A6E3F00C86376 /* Extension */,
 				445157C22A8A37F100C86376 /* Model */,
 				445157C12A8A379800C86376 /* View Controller */,
 				445157B62A8A352D00C86376 /* Assets.xcassets */,
@@ -84,6 +87,14 @@
 				445157C72A8A386300C86376 /* CoinManager.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		445157C92A8A6E3F00C86376 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				445157CA2A8A6E8F00C86376 /* Constants.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				445157CB2A8A6E8F00C86376 /* Constants.swift in Sources */,
 				445157C82A8A386300C86376 /* CoinManager.swift in Sources */,
 				445157B22A8A352B00C86376 /* ViewController.swift in Sources */,
 				445157AE2A8A352B00C86376 /* AppDelegate.swift in Sources */,
