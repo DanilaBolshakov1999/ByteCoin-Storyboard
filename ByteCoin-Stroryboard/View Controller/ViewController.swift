@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, CoinManagerDelegate {
     
     @IBOutlet var bitcoinLabel: UILabel!
     @IBOutlet var currentLabel: UILabel!
@@ -15,15 +15,29 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor(red: 91/255, green: 9/255, blue: 129/255, alpha: 1)
+        coinManger.delegate = self
         currentPicker.dataSource = self
         currentPicker.delegate = self
+
     }
     
     //MARK: - Private Properties
     
-    private var coinManger = CoinManager()
-    
+    var coinManger = CoinManager()
+        
     //MARK: - func
+    
+    func didFailWithError(error: Error) {
+        print(error)
+    }
+    
+    func didUpdatePrice(price: String, currency: String) {
+        DispatchQueue.main.async {
+            self.bitcoinLabel.text = price
+            self.currentLabel.text = currency
+        }
+    }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
