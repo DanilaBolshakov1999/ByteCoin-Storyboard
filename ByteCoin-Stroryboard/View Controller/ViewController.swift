@@ -15,7 +15,6 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(red: 91/255, green: 9/255, blue: 129/255, alpha: 1)
         coinManger.delegate = self
         currentPicker.dataSource = self
         currentPicker.delegate = self
